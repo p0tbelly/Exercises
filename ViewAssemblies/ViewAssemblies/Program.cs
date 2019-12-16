@@ -9,6 +9,9 @@ namespace ViewAssemblies
     {
         static void Main(string[] args)
         {
+            System.Data.DataSet ds;
+            System.Net.Http.HttpClient client;
+
             foreach (var r in Assembly.GetEntryAssembly().GetReferencedAssemblies())
             {
                 var a = Assembly.Load(new AssemblyName(r.FullName));
